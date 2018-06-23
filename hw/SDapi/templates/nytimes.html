@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} NYTIMES ARTICLE SEARCH {% endblock title %}
+
+{% block body %}
+
+{% for meta_data in articles %}
+    <div class="container">
+      <p> <a href="{{ meta_data[1] }}"> {{ meta_data[0] }} </a> </p>
+    </div>
+    <hr>
+{% endfor %}
+<div class="container">
+  <a type="button" class="btn btn-primary" role="button" href="/nytimes_search"> New Search </a>
+</div>
+
+{% endblock body %}

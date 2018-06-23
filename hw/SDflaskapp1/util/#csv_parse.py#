@@ -1,0 +1,22 @@
+import csv
+from random import random
+
+def get_table_data(csv_file):
+    with open (csv_file, 'rU') as f:
+        occ = csv.reader(f, delimiter = ",", quotechar = "\"") #parses the csv into jobs and percents
+        table_data = list(occ) #creates a list of lists of jobs & percentages... to be tablified
+    return table_data
+
+def get_rand_job(csv_file):
+    with open(csv_file, 'rU') as f:
+        occ = csv.DictReader(f) #a collection of dictionaries with keys "Job Class" and "Percentages"
+        rand = random() * 99.8
+        curr = 0
+        job = ''
+        for dic in occ: #finds a random job by adding up the percentages until it is greater than rand
+            if curr >= rand:
+                job = dic['Job Class']
+                break
+            else:
+                curr += float(dic['Percentage'])
+    return job

@@ -1,0 +1,65 @@
+/* inspired by bootstrap */
+
+body {
+  font-family: Georgia,serif;
+  background: #0077be;
+}
+
+h1 {
+  font-family: inherit;
+  font-size: 3rem;
+  text-align:justify;
+}
+
+.navzone {
+  position: relative;
+  padding: .05rem 1rem;
+  background-color: #b8cff2;
+}
+
+.navzone ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navzone h3 {
+  overflow: hidden;
+}
+
+.navzone li {
+  float: left;
+  text-align: justify;
+  padding: .5rem;
+}
+
+.navzone a {
+  text-decoration: none;
+}
+
+.navzone li a:hover {
+  border-radius: .5rem;
+  background-color: white;
+  color: #0077be;
+}
+div {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: .5rem .5rem .5rem .5rem;
+  border-radius: 1rem;
+  background-color: #b8cff2;
+  color: white;
+}
+
+a {
+  color: inherit;
+}
+p {
+  font-family: inherit;
+  font-size: 1.2rem;
+  text-align:justify;
+}

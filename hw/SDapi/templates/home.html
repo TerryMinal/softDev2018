@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} NASA DEMO {% endblock title %}
+
+<body>
+  {% block body %}
+  <div class="container">
+    <img class="img-fluid" src= "{{ image }}">
+  </div>
+  <br>
+  <div class="container">
+    <p> {{ description }} </p>
+  </div>
+  {% endblock body %}
+</body>

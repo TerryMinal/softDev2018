@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nobel Laureates</title>
+</head>
+
+<body>
+
+{{message}}
+
+{% for thing in l %}
+<h3> Year: </h3> <p> {{ thing[0] }} </p>
+<h3> Category: </h3> <p> {{ thing[1] }} </p>
+<h3> Laureates: </h3> <p> {{ thing[2] }} </p>
+<hr>
+{% endfor %}
+</body>
+
+
+</html>

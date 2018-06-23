@@ -1,0 +1,9 @@
+[submodule "projects/leftTwickz"]
+	path = projects/leftTwickz
+	url = git@github.com:TerryMinal/leftTwickz.git
+[submodule "projects/riteSnicKerz"]
+	path = projects/riteSnicKerz
+	url = git@github.com:TerryMinal/riteSnicKerz.git
+[submodule "projects/tscjhair-attack"]
+	path = projects/tscjhair-attack
+	url = git@github.com:TerryMinal/tscjhair-attack.git

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <!--
+      guanT_wengC - Terry Guan, Charles Weng
+      SoftDev2   pd7
+      K #14: You Are Smarter Than the President*
+      2018-3-26
+    -->
+    <meta charset="utf-8">
+    <title>NaN NaN</title>
+    <style>
+      .chart1 div, .chart2 div {
+        font: 10px sans-serif;
+        background-color: steelblue;
+        text-align: center;
+        padding: 3px;
+        width: 100%;
+        margin: 1px;
+        color: white;
+      }
+      footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+      }
+      .table:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- table 1 -->
+    <div class="table">
+      <center><h1>Federal Budget 2015</h1></center>
+      <div style="float:left; width:11%">
+        total revenue
+        <br>total spending
+        <br>money lost
+        <br>GDP
+      </div>
+      <div class="chart1" style="float:left; width:89%">
+
+      </div>
+    </div>
+
+    <br>
+
+    <!-- table 2 -->
+    <div class="table">
+      <center><h1>Federal Budget 2016</h1></center>
+      <div style="float:left; width:auto">
+        total revenue
+        <br>total spending
+        <br>money lost
+        <br>GDP
+      </div>
+      <div class="chart2" style="float:left; width:auto">
+
+      </div>
+    </div>
+
+
+    <footer>
+      Note: All numbers measured in TRILLIONS OF DOLLARS
+      <br>
+      Data Sourced From <a href="http://federal-budget.insidegov.com/">Here</a>
+      <br>
+      Created by guanT_wengC
+    </footer>
+    <script src="fed.js"> </script>
+  </body>
+
+</html>

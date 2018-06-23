@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %} NYTIMES ARTICLE SEARCH {% endblock title %}
+
+{% block body %}
+<div class="container">
+  {% with errors = get_flashed_messages(category_filter=["error"]) %}
+    {% if errors %}
+      {% for msg in errors %}
+        <div class="alert alert-warning" role="alert"> {{msg}} </div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+</div>
+<div class="container">
+  <form method="GET" action="/nytimes">
+    <div class="form-group">
+      <label>Keywords</label>
+      <input type="text" class="form-control" name="q" placeholder="Keywords">
+    </div>
+    <div class="form-group">
+      <label>Starting Publishing Date</label>
+      <input type="text" class="form-control" name="begin_date" placeholder="FORMAT: YYYYMMDD">
+    </div>
+    <div class="form-group">
+      <label>Ending Publishing Date</label>
+      <input type="text" class="form-control" name="end_date" placeholder="FORMAT: YYYYMMDD">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{% endblock body %}

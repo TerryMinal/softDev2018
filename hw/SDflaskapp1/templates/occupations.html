@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+  <title> {{title}} </title>
+
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  </style>
+</head>
+
+<body>
+<div>
+  <table>
+    {% for list in lists %}
+      <tr>
+        <td> {{ list[0] }} </td>
+        <td> {{ list[1] }} </td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
+
+  <hr>
+<div>
+  <h1 style="text-align:center"> Random Job: {{randJob}} </h1>
+</div>
+</body>
+
+</html>

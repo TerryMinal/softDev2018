@@ -1,0 +1,31 @@
+body {
+    background-image: url("background.jpeg") no-repeat center center fixed;
+    color: white;
+}
+
+h1 {
+    font-size: 5em;
+    color: white;
+    margin: 0.67em 0;
+ }
+
+h2 {
+    font-size: 3em;
+    color: blue;
+    height: 0; 
+}
+p {
+    font-size: 2em;
+    color: white;
+}
+
+ul, li {
+    color: white;
+    margin-bottom: 0;
+}
+
+br {
+    font-weight: bolder;
+}
+
+

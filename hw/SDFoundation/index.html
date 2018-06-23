@@ -1,0 +1,83 @@
+<!--
+Flying Binary: Terry Guan Holden Higgens 
+SoftDev1 pd7 
+HW#12: Framework CSS 
+2017-11-08 
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title> Foundation example </title>
+
+  <!-- should actually be linking the min-->
+  <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+  <link rel="stylesheet" type="text/js" href="css/foundation.min.js">
+
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu">
+        <li class="menu-text"> Foundation example </li>
+        <li> <a href="#grids1"> X-Y Grids </a> </li>
+        <li> <a href="#"> Something else </a> </li>
+      </ul>
+    </div>
+  </div>
+
+  <br>
+  <p> disclaimer: The XY grid is supported in Chrome, Firefox, Safari 6+, IE10+, iOS 7+, and Android 4.4+. </p>
+
+  <hr>
+  <!-- Gutters refers using margin and padding for grids at the same time-->
+  <div class="grid-x grid-margin-x" id="grid1">
+    <div class="large-auto cell" style="background-color:#E26D5C;">One</div>
+    <div class="large-auto cell" style="background-color:#723D46;">Two</div>
+    <div class="medium-6 large-4 cell" style="background-color:#C9CBA3;">Three</div>
+    <div class="medium-6 large-8 cell" style="background-color:#FFE1A8;">Four</div>
+  </div>
+
+  <div class="grid-x grid-padding-x">
+    <div class="medium-6 large-4 cell" style="background-color:#C9CBA3;" >One</div>
+    <div class="medium-6 large-8 cell" style="background-color:#FFE1A8;">Two</div>
+  </div>
+
+  <hr>
+
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="large-auto cell" style="background-color:#C9CBA3;"> One </div>
+      <div class="large-auto cell" style="background-color:#FFE1A8;">Two</div>
+      <div class="large-auto cell" style="background-color:#E26D5C;">Three</div>
+      <div class="large-auto cell" style="background-color:#723D46;">Four</div>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-y">
+      <div class="grid-x">
+        <div class="medium-6 large-4 cell" style="background-color:#C9CBA3;"> One </div>
+        <div class="large-6 cell" style="background-color:#FFE1A8;">Two</div>
+      </div>
+      <div class="grid-x">
+        <div class="cell medium-4 medium-cell-block-y" style="background-color:#C9CBA3;">
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere dui pellentesque fermentum imperdiet. Vestibulum auctor vel tortor eget molestie. Vivamus a gravida elit. Duis venenatis sapien quis lorem sodales rutrum. Sed sit amet lacus iaculis, blandit nulla nec, condimentum ante. Nam id augue enim. Sed at augue ultrices lectus varius porta eget eget mi. Aliquam ultrices odio vestibulum nibh sagittis, eu euismod lorem imperdiet. Aliquam a tortor fringilla, rutrum magna sed, venenatis neque. Sed finibus dolor in tristique faucibus. Sed risus purus, bibendum viverra metus eget, faucibus sodales nulla. Vestibulum sollicitudin lobortis augue, at tristique urna congue sit amet. Vivamus eros odio, feugiat quis dui ac, tempor placerat est.
+        </p> </div>
+        <div class="cell medium-4 medium-cell-block-y" style="background-color:#FFE1A8;">Two</div>
+      </div>
+      <div class="grid-y" style="height: 500px;">
+        <div class="cell small-6 medium-8 large-2" style="background-color:#E26D5C;"> Three </div>
+        <div class="cell small-6 medium-4 large-10" style="background-color:#723D46;"> Four </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  </body>
+
+  </html>

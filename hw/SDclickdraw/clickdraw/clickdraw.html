@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+
+
+<body>
+
+  <div>
+    <canvas height='600' width='600' id='slate'>
+      boo boo
+    </canvas>
+  </div>
+
+  <div>
+    <button id ="toggle" > Box </button>
+    <button id = "wipe"> Wipe Canvas </button>
+
+  </div>
+
+  <script src="clickdraw.js"></script>
+  <!-- I always thought having ALL of the js in a completely different file as strange.
+      Why would a property of an html file be used outside the scope of its own file? Instead
+      I chose to have the functions defined in clickdraw.js and called in this html with addEventListener.-->
+  <script>
+
+    var c = document.getElementById("slate"); //gets canvas tag
+    var ctx = c.getContext("2d"); //gets context of canvas
+    var state = 0; //global state variable determining whether to draw a square or a dot. 0: dot. 1: square
+
+    document.getElementById("slate").addEventListener("click", function(e) {
+      e.preventDefault();
+      if (state == 0)
+        draw_circle(ctx, e.offsetX, e.offsetY);
+      else
+        draw_square(ctx, e.offsetX, e.offsetY);
+    } //end of function(e) definition
+  ); //end of addEventListener
+
+    var toggle = document.getElementById("toggle");
+    toggle.addEventListener("click", function(e) {
+      e.preventDefault();
+      if (state == 0) {
+        state = 1;
+        toggle.innerHTML = "Dot";
+      }
+      else {
+        state = 0;
+        toggle.innerHTML = "Box";
+      }
+    } //end of function(e) definition
+    ); //end of addEventListener
+
+    document.getElementById("wipe").addEventListener("click", function(e) {
+      e.preventDefault();
+      clean_canvas(ctx);
+    } //end of function(e) definition
+    ); //end of addEventListener
+
+  </script>
+
+</body>
+
+</html>
