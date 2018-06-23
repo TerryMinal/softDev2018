@@ -7,3 +7,6 @@
 [submodule "projects/tscjhair-attack"]
 	path = projects/tscjhair-attack
 	url = git@github.com:TerryMinal/tscjhair-attack.git
+[submodule "projects/PancakeSafari"]
+	path = projects/PancakeSafari
+	url = git@github.com:TerryMinal/PancakeSafari.git
